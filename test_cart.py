@@ -47,9 +47,20 @@ class categories_navigation_unittest(unittest.TestCase):
                         link_prod = prod.find_element(By.TAG_NAME, 'a')
                         link_prod.click()
                         time.sleep(3)
-                        driver.back()    
-                except:
-                    print("No encontro productos")
+                        
+                    # Hacer clic en el botón "Add to Cart"
+                        try:
+                            add_to_cart_button = driver.find_element(By.ID, 'button-cart')
+                            add_to_cart_button.click()
+                            time.sleep(3)
+                            
+                            print("Producto agregado al carrito")
+                        except Exception:
+                            print("No se encontró el botón 'Add to Cart'")
+
+                    
+                except Exception as e:
+                    print(f"No se encontraron productos: {str(e)}")
                 
                 driver.back()
                 time.sleep(1)                
