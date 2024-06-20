@@ -4,5 +4,6 @@
 #### Pruebas con Selenium en Python
 
 - [x] Prueba automatica de Busqueda y navegacion de productos encontrados
-- [] Prueba automatica de navegacion por categorias (En progreso)
-- [] Prueba automatica sobre carrito (A realizar)
+- [x] Prueba automatica de navegacion por categorias 
+- [x] Prueba automatica sobre carrito
+- [x] Prueba de Login con credenciales correctas y erroneas
